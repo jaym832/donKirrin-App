@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="newCustomerButton" layoutX="150.0" layoutY="290.0" mnemonicParsing="false" onAction="#newCustomerButtonHandle" prefHeight="35.0" prefWidth="117.0" text="New Customer" />
+      <Button fx:id="returningCustomerButton" layoutX="343.0" layoutY="290.0" mnemonicParsing="false" onAction="#returningCustomerButtonHandle" prefHeight="35.0" prefWidth="117.0" text="Returning Customer">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="donkirrinLogo" fitHeight="249.0" fitWidth="288.0" layoutX="156.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
