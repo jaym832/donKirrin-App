@@ -123,6 +123,18 @@ private Statement stmt =null;
     }
 
 
-    public void returningCustomerButtonHandle(ActionEvent event) {
+    public void PremiumCustomerButtonHandle(ActionEvent event) {
+        FXMLLoader Loader = new FXMLLoader();
+        Loader.setLocation(getClass().getResource("premiumcustomers.fxml"));
+        try {
+            Loader.load();
+        } catch (IOException ex) {
+            Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        Parent p = Loader.getRoot();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(p));
+        stage.show();
     }
 }
